@@ -54,7 +54,18 @@ An implementation of the fast string matching algorithm for multiple patterns pr
       <li><b>Definition</b>: This class contains functions that uses the PMM to find the profanity in the text given by the user</li>
       <li><b>Functions</b></li>
       <ul>
-        <li><code><b>
+        <li><code><b>public static HashMap&lt;String, List&lt;Integer&gt;&gt; search(String text)</b></code></li>
+        <ul>
+          <li>This function searches through the text given in the parameter and returns a HashMap object which maps the each detected word and a list of indexes where it is found in the text</li
+        </ul>
+        <li><code><b>public static void outputAllOccurences(String text, HashMap&lt;String, List&lt;Integer&gt;&gt; profanityFound)</b></code></li>
+        <ul>
+          <li>This function outputs every occurence of the detected words</li>
+        </ul>
+        <li><code><b>public static String censor(String text, HashMap&lt;String, List&lt;Integer&gt;&gt; profanityFound)</b></code></li>
+        <ul>
+          <li>This function returns a censored version of the text given in the parameter</li>
+        </ul>
       </ul>
     </ul>
   </ul>
